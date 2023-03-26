@@ -85,6 +85,7 @@ header button {
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
+  border: none;
 }
 
 header a {
@@ -140,6 +141,7 @@ button {
   color: #FFFFFF;
   font-family: 'gilroy-regular', sans-serif;
   font-style: normal;
+  border: none;
 }
 
 .main {
