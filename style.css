@@ -7,10 +7,6 @@
     src: url(gilroy-bold.ttf);
 }
 
-/* body { */
-    /* background: #E5E5E5; */
-/* } */
-
 h1, h2, h3, h4, h5, h6, h7, h8 {
     font-family: 'gilroy-bold', sans-serif;
     font-style: normal;
@@ -33,6 +29,7 @@ header {
     min-height: 120px;
     width: 100%;
     max-width: 1920px;
+    margin: 0 auto;
 }
 
 .menu {
@@ -41,7 +38,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex: 0 0.5 698px;
-    height: 16px;
+    min-height: 16px;
 }
 
 .space {
@@ -134,7 +131,7 @@ div.main-text p {
     line-height: 42px;
     color: #FFFFFF;
     margin: 0 0 36px 0;
-    width: 700px;
+    max-width: 700px;
 }
 
 div.main-text button {
@@ -155,9 +152,10 @@ div.main-text button {
 
 slider {
     display: block;
-    margin: 0 260px 158px 260px;
-    height: 893px;
-        border: solid red 1px;
+    max-width: 1400px;
+    margin: 0 auto 158px auto;
+    min-height: 893px;
+    border: solid red 1px;
 }
 
 holder {
@@ -181,7 +179,7 @@ holder img:nth-of-type(1) {
 
 holder div:nth-of-type(1) {
     width: 174px;
-    height: 60px;
+    min-height: 60px;
     margin: 35px 71px 0 40px;
 }
 
@@ -276,7 +274,7 @@ div.box-text p {
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
-        color: #FFFFFF;
+    color: #FFFFFF;
     margin: 0 0 30px 0;
 }
 
@@ -296,10 +294,19 @@ div.box-text button {
     font-style: normal;
   }
 
+wrap {
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 10px;
+} 
+
 .calculate {
-    display: inline-block;
-    width: 760px;
-    margin: 0 0 50px 260px;
+    display: block;
+    text-align: left;
+    max-width: 760px;
+    margin-bottom: 50px;
     font-weight: 300;
     font-size: 20px;
     line-height: 36px;
@@ -310,9 +317,8 @@ div.box-text button {
     font-size: 34px;
     font-weight: 800;
     line-height: 56px;
-    text-align: left;
     margin: 0 0 20px 0;
-    width: 824px;
+    max-width: 824px;
     color: #1F2428;
 }
 
@@ -321,9 +327,10 @@ div.box-text button {
     flex-flow: row nowrap;
     justify-content: space-between;
     box-sizing: border-box;
-    margin: 0 260px 80px 260px;
+    max-width: 1400px;
+    margin: 0 auto 80px auto;
     padding: 46px 34px 0 35px;
-    height: 270px; 
+    min-height: 270px; 
     background: #FFFFFF;
     box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
     border-radius: 16px; 
@@ -341,6 +348,7 @@ div.box-text button {
     font-weight: 700;
     font-size: 14px;
     line-height: 18px;
+    width: 246px;
 }
 
 .form-group select {
@@ -374,7 +382,7 @@ select.services {
 .form-group input {
     border: none;
     border-bottom: solid 1px #222222;
-    min-width: 246px;
+    max-width: 246px;
     height: 66px;
     padding: 0 0 0 40px;
     font-family: 'gilroy-regular', sans-serif;
@@ -422,8 +430,9 @@ input.background-weight {
 }
 
 .options {
-    margin: 0 260px 170px 260px;
-    height: 438px;  
+    margin: 0 auto 170px auto;
+    min-height: 438px;  
+    max-width: 1400px;
 }
 
 h8 {
@@ -505,8 +514,9 @@ p.text-bold {
 }
 
 .four-steps {
-    margin: 0 307px 150px 260px;
-    height: 755px;  
+    margin: 0 auto 150px auto;
+    min-height: 755px;  
+    max-width: 1400px;
 }
 
 .four-steps h2 {
@@ -643,8 +653,9 @@ div.tour-text button {
   }
 
 .clients {
-    margin: 0 260px 80px 260px;
-    height: 494px;  
+    margin: 0 auto 80px auto;
+    max-width: 1400px;
+    min-height: 494px; 
 } 
 
 .clients h3 {
@@ -703,7 +714,8 @@ div.advantage-text p {
 }
 
 .reviews {
-    margin: 0 260px 150px 260px;
+    margin: 0 auto 150px auto;
+    max-width: 1400px;
     min-height: 752px; 
     padding: 0;   
 }
@@ -802,9 +814,9 @@ p.names {
 
 .address {
     /* background: #E5E5E5; */
-    margin: 0 260px 150px 260px;
-    /* max-width: 1400px; */
-    /* height: 476px;   */
+    margin: 0 auto 150px auto;
+    max-width: 1400px;
+    min-height: 476px;  
     font-weight: 300;
     font-size: 18px;
     line-height: 36px;   
@@ -826,8 +838,9 @@ p.names {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin: 0 60px 0px 60px;
-    height: 250px;
+    margin: 0 auto 0px auto;
+    min-height: 250px;
+    max-width: 1800px;
     background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
     border-radius: 36px;
 }
@@ -917,8 +930,9 @@ input::placeholder {
 
 footer {
     display: block;
-    height: 474px;
-    width: 100%;
+    min-height: 474px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .information {
@@ -927,7 +941,6 @@ footer {
     justify-content: space-between;
     box-sizing: border-box;
     padding-top: 70px;
-    margin: 0 260px; 
     height: 384px;
 }
 
