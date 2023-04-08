@@ -17,6 +17,14 @@ p {
     margin: 0;
 }
 
+wrap {
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1420px;
+    padding: 0 10px;
+  }
+
 button:hover {
     cursor: pointer;
 }
@@ -41,23 +49,16 @@ header {
 }
 
 .space {
-    flex: 0 1 40px;
+  flex: 0 1 40px;
 }
-
 .spacer1 {
-    flex: 0 1 259px;
+  flex: 0 1 111px;
 }
 .spacer2 {
-    flex: 0 1 111px;
+  flex: 0 1 140px;
 }
 .spacer3 {
-    flex: 0 1 140px;
-}
-.spacer4 {
-    flex: 0 1 42px;
-}
-.spacer5 {
-    flex: 0 1 259px;
+  flex: 0 1 42px;
 }
 
 header p {
@@ -79,6 +80,9 @@ header button {
     line-height: 18px;
     text-align: center;
     color: #FFFFFF;
+    font-family: 'gilroy-regular', sans-serif;
+    font-style: normal;
+  
 }
 
 div.enter img {
@@ -98,6 +102,8 @@ main {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 div.main-img img {
@@ -731,7 +737,7 @@ div.advantage-text p {
 .all-reviews {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     justify-content: space-between;
     align-content: stretch;
     min-height: 550px;
@@ -800,7 +806,7 @@ p.names {
     line-height: 24px;
 }
 
-.reviews button {
+.all-reviews button {
     width: 240px;
     height: 66px;
     border: none;
@@ -814,6 +820,7 @@ p.names {
     color: #FFFFFF;
     font-family: 'gilroy-regular', sans-serif;
     font-style: normal;
+    margin-top: 50px;
   }
 
 .address {
@@ -850,14 +857,14 @@ p.names {
 }
 
 .subscribe-empty1 {
-    flex: 0 0 200px;
+    flex: 0 1 200px;
 }
 .subscribe-text {
-    flex: 0 1 1fr; 
-    margin-right: 114px;
+    flex: 0 1 482px; 
 }
 
 h6 {
+    width: 482px;
     font-weight: 700;
     font-size: 30px;
     line-height: 40px;
@@ -866,13 +873,14 @@ h6 {
     padding: 0;
 }
 
-/* .subscribe-empty2 {
-    flex: 0 1 114px;
-} */
+.subscribe-empty2 {
+    flex: 0 1 110px;
+}
 .mail {
     display: flex;
     flex-flow: row nowrap;
-    flex: 1 0 825px;
+    justify-content: space-between;
+    flex: 1 0 804px;
 }
 
 .mail input {
@@ -909,7 +917,7 @@ input::placeholder {
     width: 240px;
     height: 66px;
     padding: 0;
-    margin-left: 51px;
+    margin-left: 40px;
     background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
     box-shadow: 0px 4px 4px rgba(1, 203, 124, 0.2);
     border-radius: 36px;
@@ -924,7 +932,7 @@ input::placeholder {
 }
 
 .subscribe-empty3 {
-    flex: 0 0 200px;
+    flex: 0 1 200px;
 }
 
 footer {
@@ -940,7 +948,7 @@ footer {
     justify-content: space-between;
     box-sizing: border-box;
     padding-top: 70px;
-    height: 384px;
+    min-height: 384px;
 }
 
 .information p {
@@ -1042,6 +1050,36 @@ footer {
         min-height: 100px;
     }
 
+    box {
+        margin-bottom: 20px;
+    }
+
+    .options {
+        margin-bottom: 20px;
+    }  
+
+    .four-steps {
+        margin-bottom: 20px;
+    }  
+
+    .tour {
+        margin-bottom: 20px;
+    }
+
+    div.tour h4 {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .address {
+        margin-bottom: 20px; 
+    }
+
+    .reviews {
+        margin-bottom: 20px; 
+    }
+
     .calculate {
         max-width: 100%;
     }
@@ -1124,21 +1162,68 @@ footer {
     .advantages {
         display: flex;
         flex-flow: column nowrap;
-        align-items: center;
 }
 
     .advantage-block {
         margin: 0 auto;
+        min-width: 650px;
+        
 }
 
+    div.advantage-block p {
+        text-align: left;
+}
+
+    .all-reviews {
+        flex-flow: column nowrap;
+        align-items: center;  
+}
+
+    .reviews h8 {
+        display: block;
+        text-align: center;
+    }
+
+    .subscribe {
+        flex-flow: column nowrap;
+        height: auto;
+        justify-content: space-around;  
+        align-items: center; 
+        /* min-height: auto;  */
+    }
+
+    .subscribe-empty1 {
+        display: none;
+    }
+    .subscribe-text {
+        flex: 0 1 auto; 
+        margin-bottom: 20px;
+    }
+
+    .subscribe-text h6{
+        width: auto;
+        text-align: center;
+    }
+    .subscribe-empty2 {
+        display: none;
+    }
+    .mail {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        flex: 0 0 auto;
+        min-height: auto;
+    }
+
+    .mail input {
+        margin-bottom: 10px;
+    }
+
+    .subscribe-empty3 {
+        display: none;
+    }
 }
  
-
-
-
-
-
-
 @media (max-width: 1050.02px) {
     .menu {
         display: flex;
@@ -1147,7 +1232,190 @@ footer {
         flex: 0 0.5 230px;
     }
 
+    .menu p{
+        margin: 4px;
+    }
+
     .space {
         display: none;
     }
+
+    .info-column {
+        margin-left: 10px;
+    } 
+}
+
+@media (max-width: 750.02px) {
+header {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    margin: 0 auto;
+  }
+  
+  div.enter-img a{
+    display: none;
+  }
+  
+  .spacer2 {
+    display: none;
+  }
+  
+  div.enter-link p{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 0 0 40px;
+  }
+      
+  h1, h5 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px
+  }
+
+  div.main-text p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+  }
+main {
+    height: auto;
+    margin: 20px 0;
+}
+
+  div.main-img {
+    display: none;
+  }
+
+  div.box-img {
+    display: none;
+  }
+
+.postbox {
+    margin: 0;
+}
+
+.options {
+    min-height: auto;
+}
+
+div.delivery-option {
+    padding: 0;
+    justify-content: center;
+}
+
+.variant img{
+    display: none;
+}
+
+.variant p{
+    margin: 0;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.terms {
+    padding: 0 0 0 10px;
+    border: none;
+}
+
+.price {
+    padding: 0;
+    border: none;
+}
+
+.total {
+    padding: 0 0 0 10px;
+    border: none;
+}
+
+.tour-img {
+    display: none;
+}
+
+div.tour h4 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.clients h3 {
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+div.clients p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+div.tour-text p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.options p.text-bold{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.advantage-block {
+    min-width: 100%;
+}
+
+.separate-review {
+    width: 100%;
+    /* height: 260px; */
+}
+
+div.separate-review img:first-child {
+    display: none;
+}
+
+.address h3 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.subscribe {
+    padding: 0 10px;
+}
+
+.subscribe-text h6 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.mail input {
+    width: 100%;
+}
+
+.mail button {
+    margin: 0 auto;
+}
+
+  div.information {
+    flex-flow: column;
+    align-items: center;
+    margin: 10px auto 0 auto;
+    padding: 0;
+    width: 250px;
+}
+  
+div.info-column {
+    width: 250px;
+}
+
+.rights {
+    margin: 0 10px;
+}
 }
