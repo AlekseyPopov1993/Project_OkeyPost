@@ -122,9 +122,6 @@ div.main-img img {
 .main-empty2 {
     flex: 0 1 52px;
 }
-/* .main-img {
-    flex: 0 0 auto;
-} */
 
 .main-empty3 {
     flex: 0 1 260px;
@@ -169,6 +166,54 @@ slider {
     margin: 0 auto 158px auto;
     min-height: 893px;
     border: solid red 1px;
+}
+
+slider h2 {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 50px;
+    margin: 0 0 40px 0;
+    max-width: 477px;
+}
+
+.mini-slider {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1400px;
+    min-height: 100px;
+    margin-bottom: 54px;
+}
+
+.arrow {
+    max-width: 70px;
+}
+
+.slide-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 25px 0 31px;
+    flex: 0 1 auto;
+}
+
+.slide-box:hover {
+    background: #F2F6FC;
+    cursor: pointer;
+}
+
+.space-into-box {
+    min-width: 17px;
+}
+
+.slide-box p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    flex: 0 1 auto;
 }
 
 holder {
@@ -995,6 +1040,21 @@ footer {
         line-height: 60px;   
     }
 
+    .slide-box {
+        padding: 0 5px 0 5px;
+        flex: 0 1 auto;
+    }
+    
+    .space-into-box {
+        min-width: 5px;
+    }
+
+    .slide-box p {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
     holder {
         display: flex;
         flex-flow: column nowrap;
@@ -1243,6 +1303,17 @@ footer {
     .info-column {
         margin-left: 10px;
     } 
+
+
+    .mini-slider img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .arrow img {
+        width: 26px;
+        height: 16px;  
+    }
 }
 
 @media (max-width: 750.02px) {
@@ -1269,6 +1340,26 @@ header {
     margin: 0 0 0 40px;
   }
       
+  .mini-slider {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+    .slide-box {
+        margin: 10px 0;
+    }
+
+ .arrow img {
+    transform: rotate(90deg);
+    align-self: flex-end;
+ }
+
+ .slide-box img {
+    height: 52px;
+    width: 52px;
+ }
+
   h1, h5 {
     font-weight: 500;
     font-size: 28px;
