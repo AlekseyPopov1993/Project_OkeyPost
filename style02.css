@@ -109,7 +109,7 @@ holder {
     margin-bottom: 29px;
 }
   
-  .description {
+.description {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -117,7 +117,7 @@ holder {
     margin-bottom: 40px;
 }
 
-  h1 {
+h1 {
     font-weight: 800;
     font-size: 48px;
     line-height: 60px;
@@ -352,6 +352,8 @@ wrapper {
     min-height: 280px;
     background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
     border-radius: 36px;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 h3 {
