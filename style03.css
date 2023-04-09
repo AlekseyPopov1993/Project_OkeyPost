@@ -143,12 +143,12 @@ button {
 .main {
   display: grid;
 grid-template: 
-  "headline  headline    headline   ."      168px
-  "img1     text-area1   img6   text-area6" 360px
-  "img2     text-area2   img7   text-area7" 360px
-  "img3     text-area3   img8   text-area8" 360px
-  "img4     text-area4   img9   text-area9" 360px
-  "img5     text-area5  img10   text-area10" 360px
+  "headline    headline         headline   ."               168px
+  "Abercrombie text-Abercrombie Timberland text-Timberland" 360px
+  "Polo        text-Polo        Hollister  text-Hollister"  360px
+  "Kors        text-Kors        Saks       text-Saks"       360px
+  "Victoria    text-Victoria    levi       text-levi"       360px
+  "UGG         text-UGG         Balance    text-Balance"    360px
 /  328px     301px   328px    301px;
 grid-column-gap: 33px;
 grid-row-gap: 30px;
@@ -158,65 +158,65 @@ margin-left: auto;
 margin-right: auto;
 }
 
-.img1 {
-  grid-area: img1
+.Abercrombie {
+  grid-area: Abercrombie
 }
-.img2 {
-  grid-area: img2
+.Polo {
+  grid-area: Polo
 }
-.img3 {
-  grid-area: img3
+.Kors {
+  grid-area: Kors
 }
-.img4 {
-  grid-area: img4
+.Victoria {
+  grid-area: Victoria
 }
-.img5 {
-  grid-area: img5
+.UGG {
+  grid-area: UGG
 }
-.text-area1 {
-  grid-area: text-area1
+.text-Abercrombie {
+  grid-area: text-Abercrombie
 }
-.text-area2 {
-  grid-area: text-area2
+.text-Polo {
+  grid-area: text-Polo
 }
-.text-area3 {
-  grid-area: text-area3
+.text-Kors {
+  grid-area: text-Kors
 }
-.text-area4 {
-  grid-area: text-area4
+.text-Victoria {
+  grid-area: text-Victoria
 }
-.text-area5 {
-  grid-area: text-area5
+.text-UGG {
+  grid-area: text-UGG
 }
-.img6 {
-  grid-area: img6
+.Timberland {
+  grid-area: Timberland
 }
-.img7 {
-  grid-area: img7
+.Hollister {
+  grid-area: Hollister
 }
-.img8 {
-  grid-area: img8
+.Saks {
+  grid-area: Saks
 }
-.img9 {
-  grid-area: img9
+.levi {
+  grid-area: levi
 }
-.img10 {
-  grid-area: img10
+.Balance {
+  grid-area: Balance
 }
-.text-area6 {
-  grid-area: text-area6
+.text-Timberland {
+  grid-area: text-Timberland
 }
-.text-area7 {
-  grid-area: text-area7
+.text-Hollister {
+  grid-area: text-Hollister
 }
-.text-area8 {
-  grid-area: text-area8
+.text-Saks {
+  grid-area: text-Saks
 }
-.text-area9 {
-  grid-area: text-area9
+.text-levi {
+  grid-area: text-levi
 }
-.text-area10 {
-  grid-area: text-area10
+.text-Balance {
+  grid-area: text-Balance
 }
 
 .headline {
@@ -258,31 +258,31 @@ main.main a {
 goods {
     margin-left: 23px;
 }
-goods.text-area2 p:last-of-type {
+goods.text-Polo p:last-of-type {
     margin-top: 55px;
 }
 
-goods.text-area3 p:first-of-type {
+goods.text-Kors p:first-of-type {
     margin-bottom: 13px;
 }
 
-goods.text-area3 p:last-of-type {
+goods.text-Kors p:last-of-type {
     margin-top: 60px;
 }
 
-goods.text-area7 p:first-of-type {
+goods.text-Hollister p:first-of-type {
   margin-bottom: 109px;
 }
 
-goods.text-area9 p:first-of-type {
+goods.text-levi p:first-of-type {
   margin-bottom: 49px;
 }
 
-goods.text-area9 p:last-of-type {
+goods.text-levi p:last-of-type {
   margin-top: 60px;
 }
 
-goods.text-area10 p:first-of-type {
+goods.text-Balance p:first-of-type {
   margin-bottom: 109px;
 }
 
@@ -382,17 +382,17 @@ footer {
 .main {
   display: grid;
 grid-template: 
-  "headline  headline"   168px
-  "img1     text-area1"  360px
-  "img2     text-area2"  360px
-  "img3     text-area3"  360px
-  "img4     text-area4"  360px
-  "img5     text-area5"  360px
-  "img6     text-area6"  360px
-  "img7     text-area7"  360px
-  "img8     text-area8"  360px
-  "img9     text-area9"  360px
-  "img10    text-area10" 360px
+  "headline    headline"         168px
+  "Abercrombie text-Abercrombie" 360px
+  "Polo        text-Polo"        360px
+  "Kors        text-Kors"        360px
+  "Victoria    text-Victoria"    360px
+  "UGG         text-UGG"         360px
+  "Timberland  text-Timberland"  360px
+  "Hollister   text-Hollister"   360px
+  "Saks        text-Saks"        360px
+  "levi        text-levi"        360px
+  "Balance     text-Balance"     360px
 
 /  328px     301px;
 grid-column-gap: 33px;
@@ -475,27 +475,27 @@ div.enter-link p{
 .main {
   display: grid;
 grid-template: 
-  "headline"    80px
-  "img1"        360px
-  "text-area1"  1fr
-  "img2"        360px
-  "text-area2"  1fr
-  "img3"        360px
-  "text-area3"  1fr
-  "img4"        360px
-  "text-area4"  1fr
-  "img5"        360px
-  "text-area5"  1fr
-  "img6"        360px
-  "text-area6"  1fr
-  "img7"        360px
-  "text-area7"  1fr
-  "img8"        360px
-  "text-area8"  1fr
-  "img9"        360px
-  "text-area9"  1fr
-  "img10"       360px
-  "text-area10" 1fr
+  "headline"         80px
+  "Abercrombie"      360px
+  "text-Abercrombie" 1fr
+  "Polo"             360px
+  "text-Polo"        1fr
+  "Kors"             360px
+  "text-Kors"        1fr
+  "Victoria"         360px
+  "text-Victoria"    1fr
+  "UGG"              360px
+  "text-UGG"         1fr
+  "Timberland"       360px
+  "text-Timberland"  1fr
+  "Hollister"        360px
+  "text-Hollister"   1fr
+  "Saks"             360px
+  "text-Saks"        1fr
+  "levi"             360px
+  "text-levi"        1fr
+  "Balance"          360px
+  "text-Balance"     1fr
 /  328px;
 grid-column-gap: 0;
 grid-row-gap: 0;
