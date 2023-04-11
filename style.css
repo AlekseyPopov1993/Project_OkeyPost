@@ -93,7 +93,7 @@ header a {
     text-decoration: none;
 }
 
-main {
+.main {
     margin: 0 auto 160px auto;
     max-width: 1800px;
     height: 680px;
@@ -166,28 +166,33 @@ slider {
     margin: 0 auto 158px auto;
     min-height: 893px;
     border: solid red 1px;
+    box-sizing: border-box;
+    padding: 0 10px;
 }
 
 slider h2 {
     font-weight: 800;
     font-size: 44px;
     line-height: 50px;
-    margin: 0 0 40px 0;
+    margin: 0 0 30px 0;
     max-width: 477px;
 }
 
 .mini-slider {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 1400px;
+    justify-content: space-between;
+    align-items: center; 
+    text-align: center;
+    max-width: 1300px;
     min-height: 100px;
     margin-bottom: 54px;
+    margin: 0 auto;
 }
 
-.arrows {
-    max-width: 70px;
+.slide-box img {
+    float: left;
+    /* margin-right: 17px; */
 }
 
 .slide-box {
@@ -196,8 +201,8 @@ slider h2 {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: 0 25px 0 31px;
-    flex: 0 1 auto;
+    padding: 0 0 0 20px;
+    flex: 0 0 auto;
 }
 
 .slide-box:hover {
@@ -205,14 +210,14 @@ slider h2 {
     cursor: pointer;
 }
 
-.space-into-box {
-    min-width: 17px;
+.slick-arrow:hover {
+    cursor: pointer;
 }
 
 .slide-box p {
     font-weight: 700;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 52px;
     flex: 0 1 auto;
 }
 
@@ -281,7 +286,7 @@ holder p {
     line-height: 24px;
 }
 
-box {
+.box {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -1025,21 +1030,6 @@ footer {
         line-height: 60px;   
     }
 
-    .slide-box {
-        padding: 0 5px 0 5px;
-        flex: 0 1 auto;
-    }
-    
-    .space-into-box {
-        min-width: 5px;
-    }
-
-    .slide-box p {
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 16px;
-    }
-
     holder {
         display: flex;
         flex-flow: column nowrap;
@@ -1095,7 +1085,7 @@ footer {
         min-height: 100px;
     }
 
-    box {
+    .box {
         margin-bottom: 20px;
     }
 
@@ -1289,16 +1279,6 @@ footer {
         margin-left: 10px;
     } 
 
-
-    .mini-slider img {
-        width: 32px;
-        height: 32px;
-    }
-
-    .arrows img {
-        width: 26px;
-        height: 16px;  
-    }
 }
 
 @media (max-width: 750.02px) {
@@ -1325,26 +1305,6 @@ div.enter-link p{
     align-items: center;
     margin: 0 0 0 40px;
 }
-      
-.mini-slider {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-.slide-box {
-    margin: 10px 0;
-}
-
-.arrows img {
-    transform: rotate(90deg);
-    align-self: flex-end;
-}
-
-.slide-box img {
-    height: 52px;
-    width: 52px;
-}
 
 h1, h5 {
     font-weight: 500;
@@ -1358,7 +1318,7 @@ div.main-text p {
     line-height: 20px;
 }
 
-main {
+.main {
     height: auto;
     margin: 20px 0;
 }
