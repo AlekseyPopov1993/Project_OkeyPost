@@ -21,6 +21,10 @@ button:hover {
     cursor: pointer;
 }
 
+a:hover {
+    text-decoration: underline !important;
+}
+
 wrap {
     display: block;
     box-sizing: border-box;

@@ -7,7 +7,7 @@
     src: url(gilroy-bold.ttf);
 }
 
-h1, h2, h3, h4, h5, h6, h7, h8 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'gilroy-bold', sans-serif;
     font-style: normal;
 }
@@ -21,12 +21,16 @@ wrap {
     display: block;
     box-sizing: border-box;
     margin: 0 auto;
-    max-width: 1420px;
+    max-width: 1400px;
     padding: 0 10px;
   }
 
 button:hover {
     cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline !important;
 }
 
 header {
@@ -93,14 +97,20 @@ header a {
     text-decoration: none;
 }
 
+.for-background {
+    max-width: 1800px;
+    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
+    border-radius: 36px;
+    margin: 0 auto;
+}
+
 .main {
     margin: 0 auto 160px auto;
     max-width: 1800px;
     height: 680px;
-    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
-    border-radius: 36px;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
     padding: 0 10px;
@@ -113,18 +123,12 @@ div.main-img img {
     min-width: 120px;
 }
 
-.main-empty1 {
-    flex: 0 1 200px;
-}
 .main-text {
-    flex: 0 0.5 715px; 
-}
-.main-empty2 {
-    flex: 0 1 52px;
+    flex: 0 1 715px; 
 }
 
-.main-empty3 {
-    flex: 0 1 260px;
+.main-img {
+    flex: 0 0.5 565px;
 }
 
 h1 {
@@ -194,7 +198,6 @@ div.main-text button {
 
 .slide-box img {
     float: left;
-    /* margin-right: 17px; */
 }
 
 .slide-box {
@@ -416,25 +419,15 @@ holder p {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
     margin: 0 auto 160px auto;
     max-width: 1800px;
     min-height: 480px;
-    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
-    border-radius: 36px; 
 }
 
-.box-empty1 {
-    flex: 0 1 200px;
-}
-
-.box-empty2 {
-    flex: 0 1 75px;
-}
 .box-text {
     flex: 0 1 834px;
-}
-.box-empty3 {
-    flex: 0 1 289px;
+    margin-left: 10px;
 }
 
 .box-img img {
@@ -476,14 +469,6 @@ div.box-text button {
     font-family: 'gilroy-regular', sans-serif;
     font-style: normal;
   }
-
-wrap {
-    display: block;
-    box-sizing: border-box;
-    margin: 0 auto;
-    max-width: 1400px;
-    padding: 0 10px;
-} 
 
 .calculate {
     display: block;
@@ -612,18 +597,21 @@ input.background-weight {
     max-width: 1400px;
 }
 
-h8 {
+.options h6 {
     padding: 0;
     margin: 0 0 30px 0;
     font-weight: 800;
     font-size: 36px;
     line-height: 56px;
+    color: #1F2428;
+    width: auto;
 }
 
 .options p {
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
+
 }
 
 .delivery-option {
@@ -718,6 +706,7 @@ p.text-bold {
     font-weight: 300;
     font-size: 16px;
     line-height: 30px;
+    max-width: 100%;
 }
 
 .uppercase {
@@ -734,9 +723,11 @@ p.text-bold {
 }
 
 .step img {
-    width: 280px;
-    height: 280px;
+    max-width: 280px;
+    max-height: 280px;
     margin-bottom: 16px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .line {
@@ -771,8 +762,7 @@ p.text-bold {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
-    border-radius: 36px;
+    justify-content: space-between;
     margin: 0 auto 150px auto;
     min-height: 480px;
     max-width: 1800px;
@@ -786,20 +776,12 @@ h4 {
     color: #FFFFFF;
 }
 
-.tour-empty1 {
-    flex: 0 1 191px;
-}
 .tour-img {
     flex: 0 0 411px; 
 }
-.tour-empty2 {
-    flex: 0 1 75px;
-}
+
 .tour-text {
     flex: 0 1 763px;
-}
-.tour-empty3 {
-    flex: 0 1 360px;
 }
 
 div.tour-text p {
@@ -841,7 +823,7 @@ div.tour-text button {
     padding: 0;
     }   
 
-div.clients p {
+section.clients p {
     font-weight: 300;
     font-size: 20px;
     line-height: 36px;
@@ -850,12 +832,13 @@ div.clients p {
 
 .advantages {
     display: flex;
-    flex-flow: row;
+    flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 .advantage-block {
     box-sizing: border-box;
-    min-width: 447px;
+    width: 447px;
     height: 250px;
     background: #FFFFFF;
     box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
@@ -867,16 +850,14 @@ div.clients p {
     margin-bottom: 30px;   
 }
 
-.advantage-space {
-  flex: 1 1 30px; 
-}
-
-div.advantage-text h7 {
+div.advantage-text h6 {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
     margin: 0;
     padding: 0;
+    color: #1F2428;
+    width: auto;
 }
 
 div.advantage-text p {
@@ -893,14 +874,14 @@ div.advantage-text p {
     padding: 0;   
 }
 
-.reviews h8 {
+.reviews h6 {
     margin-bottom: 40px;
+    color: #1F2428;
 }
 
 .all-reviews {
     display: flex;
     flex-flow: row wrap;
-    /* margin-bottom: 50px; */
     justify-content: space-between;
     align-content: stretch;
     min-height: 550px;
@@ -1010,16 +991,12 @@ p.names {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+    justify-content: space-between;
     margin: 0 auto 0px auto;
     min-height: 250px;
     max-width: 1800px;
-    background: linear-gradient(79.63deg, #5B52A3 1.08%, #40B8EA 100%);
-    border-radius: 36px;
 }
 
-.subscribe-empty1 {
-    flex: 0 1 200px;
-}
 .subscribe-text {
     flex: 0 1 482px; 
 }
@@ -1034,14 +1011,16 @@ h6 {
     padding: 0;
 }
 
-.subscribe-empty2 {
+/* .subscribe-empty2 {
     flex: 0 1 110px;
-}
+} */
+
 .mail {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    flex: 1 0 804px;
+    flex: 1 0 800px;
+    max-width: 800px;
 }
 
 .mail input {
@@ -1150,184 +1129,186 @@ footer {
 }
 
 @media (max-width: 1450.02px) {
-    h1 {
-        font-weight: 500;
-        font-size: 54px;
-        line-height: 60px;   
-    }
-
-    holder {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding-top: 17.5px;
-        padding-bottom: 27px;
-        max-width: 1400px;
-    }
-
-    holder div:nth-of-type(1) {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        max-width: 100%;
-        min-height: 100px;
-        padding: 0;
-    }
-    
-    holder div:nth-of-type(2) {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        box-sizing: border-box;
-        border-left: none;
-        padding: 0;
-        max-width: 100%;
-        min-height: 100px;
-    }
-    
-    holder div:nth-of-type(3) {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        box-sizing: border-box;
-        border-left: none;
-        padding: 0;
-        max-width: 100%;
-        min-height: 100px;
-    }
-    
-    holder div:nth-of-type(4) {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        box-sizing: border-box;
-        border-left: none;
-        padding: 0;
-        max-width: 100%;
-        min-height: 100px;
-    }
-
-    .box {
-        margin-bottom: 20px;
-    }
-
-    .options {
-        margin-bottom: 20px;
-    }  
-
-    .four-steps {
-        margin-bottom: 20px;
-    }  
-
-    .tour {
-        margin-bottom: 20px;
-    }
-
-    div.tour h4 {
-        font-weight: 600;
-        font-size: 36px;
-        line-height: 42px;
-    }
-
-    .address {
-        margin-bottom: 20px; 
-    }
-
-    .reviews {
-        margin-bottom: 20px; 
-    }
-
-    .calculate {
-        max-width: 100%;
-    }
-
-    div.calculate h2{
-        text-align: center;
-        max-width: 100%;
-        margin: 0;
-    }
-
-    div.calculate p{
-        text-align: center;
-    }
-
-
-    .postbox {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        box-sizing: border-box;
-        max-width: 1400px;
-        margin: 0 auto 80px auto;
-        padding: 46px 34px 0 35px;
-        min-height: 270px; 
-        background: #FFFFFF;
-        box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
-        border-radius: 16px; 
-    }
-
-    .postbox {
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        max-width: 1400px;
-        margin: 0 auto 80px auto;
-        padding: 46px 34px 0 35px;
-        min-height: 270px; 
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .form-group button {
-        margin-top: 20px;
+h1 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 54px;   
 }
 
-    .steps-description {
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: center;
-}
-    .four-steps h2 {
-        font-size: 34px;
-        font-weight: 800;
-        line-height: 56px;
-        text-align: center;
-        margin: 0;
-        color: #1F2428;
-}
-    .step {
-        max-width: 315px;
-    }
-
-    .shopping-masters {
-        margin: 0;
-    }
-
-    .clients h3 {
-        margin: 0;
-        text-align: center;
+holder div:nth-of-type(1) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-height: 100px;
+    padding: 0;
+    margin-right: 10px;
 }
 
-    div.clients p {
-        margin: 0;
-        text-align: center;
-    }
-
-    .advantages {
-        display: flex;
-        flex-flow: column nowrap;
+holder div:nth-of-type(2) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: none;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100px;
+    margin-right: 10px;
 }
 
-    .advantage-block {
-        margin: 0 auto;
-        min-width: 650px;
+holder div:nth-of-type(3) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: none;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100px;
+    margin-right: 10px;
+}
+
+holder div:nth-of-type(4) {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    box-sizing: border-box;
+    border-left: none;
+    padding: 0;
+    max-width: 100%;
+    min-height: 100px;
+}
+
+.box {
+    margin-bottom: 20px;
+}
+
+.options {
+    margin-bottom: 20px;
+}  
+
+.four-steps {
+    margin-bottom: 20px;
+    min-height: auto;
+}  
+
+.tour {
+    margin-bottom: 20px;
+}
+
+div.tour h4 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+}
+
+.address {
+    margin-bottom: 20px; 
+}
+
+.reviews {
+    margin-bottom: 20px; 
+}
+
+.calculate {
+    max-width: 100%;
+}
+
+div.calculate h2{
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+}
+
+div.calculate p{
+    text-align: center;
+}
+
+
+.postbox {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto 80px auto;
+    padding: 46px 34px 0 35px;
+    min-height: 270px; 
+    background: #FFFFFF;
+    box-shadow: 0px 0px 70px rgba(138, 138, 138, 0.1);
+    border-radius: 16px; 
+}
+
+.postbox {
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto 80px auto;
+    padding: 46px 34px 0 35px;
+    min-height: 270px; 
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group select {
+    width: auto;
+}
+
+.form-group input {
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.form-group label {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.form-group button {
+    margin-top: 20px;
+}
+
+.four-steps h2 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 56px;
+    text-align: center;
+    margin: 0;
+    color: #1F2428;
+}
+.step {
+    max-width: 315px;
+}
+
+.shopping-masters {
+    margin: 0;
+}
+
+section.clients h3 {
+    margin: 0;
+    text-align: center;
+}
+
+section.clients p {
+    margin: 0;
+    text-align: center;
+}
+
+.advantages {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.advantage-block {
+    margin: 0 auto;
+    min-width: 650px;
         
 }
 
@@ -1340,9 +1321,10 @@ footer {
         align-items: center;  
 }
 
-    .reviews h8 {
+    .reviews h6 {
         display: block;
         text-align: center;
+        margin: 0 auto 40px auto;
     }
 
     .subscribe {
@@ -1386,24 +1368,74 @@ footer {
 }
  
 @media (max-width: 1050.02px) {
-    .menu {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        flex: 0 0.5 230px;
-    }
 
-    .menu p{
-        margin: 4px;
-    }
+holder {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding-top: 17.5px;
+    padding-bottom: 27px;
+    max-width: 1400px;
+}
 
-    .space {
-        display: none;
-    }
+holder div:nth-of-type(1) {
+    width: 340px;
+    justify-content: flex-start;
+}
 
-    .info-column {
-        margin-left: 10px;
-    } 
+holder div {
+    width: 340px;
+    justify-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    flex: 0 0.5 230px;
+}
+
+.menu p{
+    margin: 4px;
+}
+
+.space {
+    display: none;
+}
+
+.info-column {
+    margin-left: 10px;
+} 
+
+.steps-description {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopping-masters p {
+    text-align: center;
+}
+
+.four-steps button {
+    display: block;
+    margin: 0 auto;
+}
+
+.mail {
+    max-width: 100%;
+}
+
+.mail input {
+    max-width: 100%;
+}
+
+.side-text > p {
+    height: 140px;
+}
 
 }
 
@@ -1436,6 +1468,44 @@ h1, h5 {
     font-weight: 500;
     font-size: 28px;
     line-height: 36px
+}
+
+.sliders {
+    margin-bottom: 20px;
+    min-height: 600px;
+}
+
+.side-text {
+    min-height: 400px;
+    justify-content: space-between;
+}
+
+.side-text > p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    /* margin-bottom: 60px; */
+}
+
+.product-price {
+    padding-left: 5px;
+    background: none;
+}
+
+.product-price img {
+    display: none;
+}
+
+.next-slide, .previous-slide img {
+    display: none;
+}
+
+.big-slider .slick-arrow:last-of-type {
+    right: 10px;
+}
+
+.big-slider .slick-arrow:first-of-type {
+    left: 10px;
 }
 
 div.main-text p {
@@ -1500,19 +1570,19 @@ div.delivery-option {
     display: none;
 }
 
-div.tour h4 {
+section.tour h4 {
     font-weight: 600;
     font-size: 28px;
     line-height: 32px;
 }
 
-.clients h3 {
+section.clients h3 {
     font-weight: 800;
     font-size: 36px;
     line-height: 40px;
 }
 
-div.clients p {
+section.clients p {
     font-weight: 300;
     font-size: 18px;
     line-height: 20px;
@@ -1542,7 +1612,7 @@ div.separate-review img:first-child {
     display: none;
 }
 
-.address h3 {
+section.address h3 {
     font-weight: 600;
     font-size: 32px;
     line-height: 36px;
@@ -1558,20 +1628,20 @@ div.separate-review img:first-child {
     line-height: 30px;
 }
 
-.mail input {
-    width: 100%;
+.mail {
+    flex-flow: column nowrap;
 }
 
 .mail button {
     margin: 0 auto;
 }
 
-  div.information {
-    flex-flow: column;
-    align-items: center;
-    margin: 10px auto 0 auto;
-    padding: 0;
-    width: 250px;
+div.information {
+flex-flow: column;
+align-items: center;
+margin: 10px auto 0 auto;
+padding: 0;
+width: 250px;
 }
   
 div.info-column {
@@ -1580,5 +1650,9 @@ div.info-column {
 
 .rights {
     margin: 0 10px;
+}
+
+.reviews h6 { 
+    width: auto;
 }
 }
