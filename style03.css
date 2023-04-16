@@ -11,12 +11,13 @@ wrap {
   display: block;
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1420px;
+  max-width: 1400px;
   padding: 0 10px;
 }
 
 button:hover {
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(9, 96, 246, 0.7) !important;
 }
 
 h1, h2, h3, h4 {
@@ -36,9 +37,11 @@ a:hover {
 header {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   min-height: 120px;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .menu {
@@ -46,13 +49,14 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  flex: 0 0.5 698px;
+  flex: 0 0.4 698px;
   min-height: 16px;
 }
 
-.space {
-  flex: 0 1 40px;
+header .icon {
+  display: none;
 }
+
 .spacer1 {
   flex: 0 1 111px;
 }
@@ -436,14 +440,32 @@ h3 {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  flex: 0 0.5 230px;
 }
 
-.space {
+header .icon {
+  display: block;
+}
+
+div.menu a:not(:first-of-type) {
   display: none;
 }
 
+div.menu.responsive {position: relative};
+.menu.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+div.menu.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
 .menu p {
-  margin: 4px;
+  margin: 10px;
 }
 
 .info-column {
@@ -461,8 +483,12 @@ header {
   margin: 0 auto;
 }
 
-div.enter-img a{
-  display: none;
+header div {
+  margin-bottom: 10px;
+}
+
+div.enter-img {
+  margin-left: 25px;
 }
 
 .spacer2 {
@@ -473,7 +499,7 @@ div.enter-link p{
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: 0 0 0 40px;
+  margin: 0;
 }
 
 .main {

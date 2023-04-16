@@ -27,6 +27,7 @@ wrap {
 
 button:hover {
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(9, 96, 246, 0.7) !important;
 }
 
 a:hover {
@@ -36,7 +37,7 @@ a:hover {
 header {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     min-height: 120px;
     max-width: 1920px;
@@ -48,13 +49,14 @@ header {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    flex: 0 0.5 698px;
+    flex: 0 0.4 698px;
     min-height: 16px;
 }
-
-.space {
-  flex: 0 1 40px;
+ 
+header .icon {
+    display: none;
 }
+
 .spacer1 {
   flex: 0 1 111px;
 }
@@ -73,7 +75,7 @@ header p {
 }
 
 header button {
-    width: 170px;
+    min-width: 170px;
     height: 48px;
     border: none;
     background: linear-gradient(90deg, #00C97B 0%, #00D981 96.96%);
@@ -89,7 +91,11 @@ header button {
   
 }
 
-div.enter img {
+div.enter {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    flex-basis: 60px;
     margin-right: 11px;
 }
 
@@ -1332,7 +1338,6 @@ section.clients p {
         height: auto;
         justify-content: space-around;  
         align-items: center; 
-        /* min-height: auto;  */
     }
 
     .subscribe-empty1 {
@@ -1369,6 +1374,27 @@ section.clients p {
  
 @media (max-width: 1050.02px) {
 
+header .icon {
+    display: block;
+}
+
+div.menu a:not(:first-of-type) {
+    display: none;
+}
+
+div.menu.responsive {position: relative};
+  .menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  div.menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
 holder {
     display: flex;
     flex-flow: column nowrap;
@@ -1398,11 +1424,7 @@ holder div {
 }
 
 .menu p{
-    margin: 4px;
-}
-
-.space {
-    display: none;
+    margin: 10px;
 }
 
 .info-column {
@@ -1448,9 +1470,13 @@ header {
     width: 230px;
     margin: 0 auto;
 }
-  
-div.enter-img a{
-    display: none;
+
+header div {
+    margin-bottom: 10px;
+}
+
+div.enter-img {
+    margin-left: 25px;
 }
   
 .spacer2 {
@@ -1461,7 +1487,6 @@ div.enter-link p{
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin: 0 0 0 40px;
 }
 
 h1, h5 {
@@ -1482,14 +1507,20 @@ h1, h5 {
 
 .side-text > p {
     font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 20px;
     /* margin-bottom: 60px; */
 }
 
 .product-price {
     padding-left: 5px;
     background: none;
+}
+
+div.center-text p:last-of-type {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .product-price img {
@@ -1600,8 +1631,10 @@ div.tour-text p {
     line-height: 16px;
 }
 
-.advantage-block {
-    min-width: 100%;
+div.advantage-block {
+    width: auto;
+    min-width: auto;
+    /* padding: 0; */
 }
 
 .separate-review {
